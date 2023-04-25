@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace primer_parcial_solid_transporte
 {
-    public class Avion : ITransporteAereo ,ITransporte
+    public class Avion : ITransporteAereo
     {
         private string nombre;
         private int velocidadActual;
         private int velocidadMaxima;
         private int alturaActual;
         private int alturaMaxima;
-        private IRepository repository;
 
         public Avion(string nombre, int velocidadActual, int velocidadMaxima, int alturaActual, int alturaMaxima)
         {
